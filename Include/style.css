@@ -1,0 +1,28 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {
+    text-align: center;
+}
+
+#cuadrícula {
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+    padding: 20px;
+    border-color: green;
+}
+
+#cuadrícula h3{
+    display: flex;
+    justify-content: center;
+}
+
+#cuadrícula form {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
