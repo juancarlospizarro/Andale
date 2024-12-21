@@ -5,14 +5,29 @@ body {
 
 header {
     text-align: center;
+    background-color: #006634;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: white;
 }
+
+footer{
+    background-color: #006634;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+}
+
 
 #cuadrícula {
     border: 2px solid;
     border-radius: 10px;
     margin-left: 500px;
     margin-right: 500px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     padding: 10px;
     border-color: green;
 }
@@ -49,7 +64,7 @@ form div input:hover{
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
-    border-color: green;
+    border-color: #006634;
 }
 
 form div input:focus{
@@ -63,15 +78,30 @@ form div input:focus{
 
 
 input[type="submit"]{
-    background-color: green;
+    background-color: #006634;
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
 }
 
-p{
-    text-align: center;
+.curiosidades{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-style: italic;
-    font-size: small;
 }
+
+.curiosidades p{
+    margin-top: 0;
+}
+
+img {
+    filter: drop-shadow(0 0 10px white); /* Color y tamaño del borde */
+}
+
+

@@ -1,7 +1,7 @@
-const enviar = document.getElementById("enviar");
+const enviar = document.getElementById("adivinar");
 
 
-enviar.addEventListener("click", (event) => {
-    event.preventDefault();
-    alert("No se ha implementado aún");
+enviar.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe
+    alert('Esta funcionalidad aún no se ha implementado.');
 });
