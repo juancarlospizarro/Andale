@@ -16,3 +16,11 @@ INSERT INTO curiosidades (texto) VALUES ("Andalucía es reconocida mundialmente 
 UPDATE curiosidades
 SET texto = "Andalucía es una de las pocas regiones en Europa donde puedes disfrutar de playas paradisíacas y montañas nevadas todo en un mismo día."
 WHERE id = 4;
+
+
+CREATE TABLE IF NOT EXISTS palabras(
+id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+palabra VARCHAR(255) NOT NULL
+);
+
+INSERT INTO palabras (palabra) VALUES ("Curro"), ("Vaina"), ("Lache");

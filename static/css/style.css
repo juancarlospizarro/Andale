@@ -104,4 +104,12 @@ img {
     filter: drop-shadow(0 0 10px white); /* Color y tamaño del borde */
 }
 
+#palabra_correcta{
+    text-align: center;
+}
+
+#hora_andalucía{
+    text-align: center;
+}
+
 
