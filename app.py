@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import mysql.connector
 import random
 from config import db_config
+import os
 
 app = Flask(__name__)
 
@@ -30,4 +31,7 @@ def index():
     return render_template('index.html', curiosidad=curiosidad, palabra_correcta=palabra_correcta)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Usar el puerto asignado por Render, que generalmente se configura en la variable de entorno PORT
+    port = int(os.environ.get("PORT", 5000))  # Usa el puerto 5000 por defecto si no se encuentra la variable de entorno PORT
+    app.run(host='0.0.0.0', port=port, debug=True)
+
