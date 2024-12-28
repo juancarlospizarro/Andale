@@ -14,6 +14,8 @@ Este es un proyecto en el cual diseño una simple página web donde se puede jug
 
 · *Flask*
 
+· *MySQL*
+
 · *Visual Studio Code*
 
 En este [enlace]() podéis acceder a dicha página web.
@@ -36,6 +38,8 @@ This is a project in which I design a simple webpage where you can play the Word
 · *Python*
 
 · *Flask*
+
+· *MySQL*
 
 · *Visual Studio Code*
 
