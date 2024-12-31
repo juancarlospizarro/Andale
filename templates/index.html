@@ -6,49 +6,34 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="shortcut icon" href="https://img.freepik.com/vector-premium/letra-redondeada-degradado-verde-ilustracion-vectorial_875663-61.jpg" type="image/x-icon">
-    <title>Andalé - Wordle con arte</title>
+    <title>Andalingo - Aprender andaluz</title>
 </head>
 <body>
     <article>
         <header>
-            <h1 id="título">ANDALÉ</h1>
+            <h1 id="título">ANDALINGO</h1>
             <a href="#adivinar"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Wikiproyecto_Andaluc%C3%ADa.png" alt="mapa de andalucía" height="100" width="200"></a>
-            <h4 id="subtítulo">El juego de la palabrita, pero con más arte</h4>
+            <h4 id="subtítulo">Palabras y expresiones típicas andaluzas</h4>
         </header>
     
         <div class="curiosidades">
             <h4>¿Sabías qué?</h4>
             <p id="curiosidad">{{curiosidad}}</p>
         </div>
+        <div id="palabra_expresion">
+            <button type="submit"><i class="bi bi-shuffle"></i></button><p>{{palabra_correcta}}</p>
+        </div>
+        <div id="significado">
+            <p>Significado: </p>
+        </div>
+       
+
         
-        <section>
-
-            
-
-            <div id="cuadrícula">
-                <h3>Adivina la palabra</h3>
-                <form id="adivinar" method="post">
-                        <input type="text" name="intento" id="intento1" maxlength="5"><br><br> 
-                        <input type="text" name="intento" id="intento2" maxlength="5"><br><br>
-                        <input type="text" name="intento" id="intento3" maxlength="5"><br><br>
-                        <input type="text" name="intento" id="intento4" maxlength="5"><br><br>
-                        <input type="text" name="intento" id="intento5" maxlength="5"><br><br>
-                    <br>
-                    <input id="enviar" type="submit" value="Enviar">
-                </form>
-                
-            </div>
-
-        </section>
-
-        <p id="palabra_correcta"><button id="ver_palabra"><i class="bi bi-eye-fill"></i></button> {{palabra_correcta}}</p>
-
-        <p id="hora_andalucía"></p>
         
     </article>
 
     <footer>
-        © 2024 Derechos reservados. Web creada por Juan Carlos Pizarro Alonso.
+        © 2024 Derechos reservados. Web creada por Juan Carlos Pizarro Alonso. <p id="hora_andalucía"></p>
     </footer>
     
     <script src="/static/js/index.js"></script>
