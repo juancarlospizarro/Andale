@@ -6,8 +6,6 @@ import os
 
 app = Flask(__name__)
 
-# Configuración de la base de datos
-
 def obtener_curiosidad_aleatoria():
     conn = mysql.connector.connect(**db_config)
     cursor = conn.cursor()
@@ -24,11 +22,24 @@ def obtener_palabra_aleatoria():
     conn.close()
     return random.choice(palabras)
 
+def obtener_significado_palabra(palabra_expresion):
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+    cursor.execute("SELECT significado FROM palabras WHERE palabra = %s", (palabra_expresion,))
+    significado = cursor.fetchone()
+    conn.close()
+
+    if significado:
+        return significado[0]
+    else:
+        return "Significado no encontrado."
+
 @app.route('/')
 def index():
     curiosidad = obtener_curiosidad_aleatoria()
-    palabra_correcta = obtener_palabra_aleatoria()
-    return render_template('index.html', curiosidad=curiosidad, palabra_correcta=palabra_correcta)
+    palabra_expresion = obtener_palabra_aleatoria()
+    significado = obtener_significado_palabra(palabra_expresion)
+    return render_template('index.html', curiosidad=curiosidad, palabra_expresion=palabra_expresion, significado=significado)
 
 if __name__ == '__main__':
     # Usar el puerto asignado por Render, que generalmente se configura en la variable de entorno PORT

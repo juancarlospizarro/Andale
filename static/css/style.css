@@ -105,8 +105,14 @@ img {
     filter: drop-shadow(0 0 10px white); /* Color y tamaño del borde */
 }
 
+#opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #palabra_expresion{
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +127,16 @@ img {
 
 #hora_andalucía{
     color: white;
+}
+
+button{
+    margin: 2%;
+    background-color: #006634;
+    color: white;
+    padding: 1%;
+    border: 2px solid #006634;
+    border-radius: 5%;
+    font-size: large;
 }
 
 
