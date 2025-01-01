@@ -18,9 +18,13 @@ SET texto = "Andalucía es una de las pocas regiones en Europa donde puedes disf
 WHERE id = 4;
 
 
+USE andalé;
+
 CREATE TABLE IF NOT EXISTS palabras(
 id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-palabra VARCHAR(255) NOT NULL
+palabra VARCHAR(255) NOT NULL,
+significado VARCHAR(255) NOT NULL
 );
 
-INSERT INTO palabras (palabra) VALUES ("Curro"), ("Vaina"), ("Lache");
+INSERT INTO palabras (palabra, significado) VALUES ("Miarma", "Llamar de forma cariñosa a una persona. Se usa principalmente en la provincia de Sevilla."), ("Picha", "Llamar de forma coloquial a una persona. Se usa principalmente en la provincia de Cádiz."), ("Arrecío", "Indicar que una persona o tú mismo tienes mucho frío.");
+
