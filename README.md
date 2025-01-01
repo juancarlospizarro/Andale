@@ -16,9 +16,11 @@ Este es un proyecto en el cual diseño una simple página web donde se puede apr
 
 · *MySQL*
 
+· *SQL*
+
 · *Visual Studio Code*
 
-En este [enlace]() podéis acceder a dicha página web.
+La visualización del proyecto no está disponible por el momento.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,6 +43,8 @@ This is a project in which I design a simple web page where users can learn typi
 
 · *MySQL*
 
+· *SQL*
+
 · *Visual Studio Code*
 
-You can access the webpage through this [link]().
+The project visualization is currently unavailable.
